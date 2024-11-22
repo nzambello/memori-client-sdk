@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint && yarn typecheck && yarn test:ci && yarn build
+[ -n "$CI" ] && exit 0
+
+pnpm lint && pnpm typecheck && pnpm test:ci && pnpm build

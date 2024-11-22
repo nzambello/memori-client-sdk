@@ -39,7 +39,7 @@ export interface Props {
   ) => void;
 }
 
-const Button: FC<Props> = ({
+const Button = ({
   primary = false,
   outlined = false,
   ghost = false,
@@ -62,7 +62,7 @@ const Button: FC<Props> = ({
   onTouchEnd,
   children,
   isActive,
-}) => (
+}: Props) => (
   <button
     id={id}
     type={htmlType}

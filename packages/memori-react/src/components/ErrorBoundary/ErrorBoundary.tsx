@@ -1,11 +1,10 @@
-import React from 'react';
-import { Component, ErrorInfo, ReactNode } from 'react';
+import React, { Component, ErrorInfo } from 'react';
 import Button from '../ui/Button';
 import { withTranslation, WithTranslation } from 'react-i18next';
 
 interface Props extends WithTranslation {
-  fallback?: ReactNode;
-  children: ReactNode;
+  fallback?: React.ReactNode;
+  children: React.ReactNode;
 }
 
 interface State {
