@@ -1,3 +1,2 @@
 packages:
-  - "packages/memori-react"
-  - "packages/memori-webcomponent"
+  - 'packages/*'
